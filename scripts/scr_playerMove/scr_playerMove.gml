@@ -6,5 +6,4 @@ function scr_playerMove(input){
 		++x;
 	} else {
 		--x;
-	}
 }

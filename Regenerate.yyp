@@ -3,12 +3,21 @@
     {"id":{"name":"scr_consoleScripts","path":"scripts/scr_consoleScripts/scr_consoleScripts.yy",},"order":1,},
     {"id":{"name":"scr_playerAttack","path":"scripts/scr_playerAttack/scr_playerAttack.yy",},"order":5,},
     {"id":{"name":"spr_testPlayer","path":"sprites/spr_testPlayer/spr_testPlayer.yy",},"order":0,},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":4,},
+    {"id":{"name":"spr_testWhiteWall","path":"sprites/spr_testWhiteWall/spr_testWhiteWall.yy",},"order":1,},
     {"id":{"name":"scr_physics","path":"scripts/scr_physics/scr_physics.yy",},"order":3,},
     {"id":{"name":"r_test","path":"rooms/r_test/r_test.yy",},"order":1,},
     {"id":{"name":"scr_playerParseInput","path":"scripts/scr_playerParseInput/scr_playerParseInput.yy",},"order":4,},
     {"id":{"name":"obj_console","path":"objects/obj_console/obj_console.yy",},"order":1,},
+<<<<<<< HEAD
     {"id":{"name":"scr_playerJump","path":"scripts/scr_playerJump/scr_playerJump.yy",},"order":6,},
+=======
+    {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},"order":3,},
+    {"id":{"name":"sct_stateComponent","path":"scripts/sct_stateComponent/sct_stateComponent.yy",},"order":4,},
+    {"id":{"name":"obj_physicsObject","path":"objects/obj_physicsObject/obj_physicsObject.yy",},"order":2,},
+>>>>>>> f943c0e055e08730a8c2bb1ced4a26cc0de48de7
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"obj_testWall","path":"objects/obj_testWall/obj_testWall.yy",},"order":5,},
     {"id":{"name":"scr_playerMove","path":"scripts/scr_playerMove/scr_playerMove.yy",},"order":2,},
     {"id":{"name":"r__initialize","path":"rooms/r__initialize/r__initialize.yy",},"order":0,},
   ],
