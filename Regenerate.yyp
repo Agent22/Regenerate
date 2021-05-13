@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"scr_consoleScripts","path":"scripts/scr_consoleScripts/scr_consoleScripts.yy",},"order":1,},
     {"id":{"name":"spr_testPlayer","path":"sprites/spr_testPlayer/spr_testPlayer.yy",},"order":0,},
+    {"id":{"name":"scr_physics","path":"scripts/scr_physics/scr_physics.yy",},"order":3,},
     {"id":{"name":"r_test","path":"rooms/r_test/r_test.yy",},"order":1,},
     {"id":{"name":"obj_console","path":"objects/obj_console/obj_console.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
