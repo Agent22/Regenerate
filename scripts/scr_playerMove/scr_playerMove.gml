@@ -1,11 +1,14 @@
 
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_PlayerMove(){
+function scr_playerMove(){
 	if(global.console.GetInputMoveLeft()){
-		x--;
+		setVelocityX(-3);
 	}
 	if(global.console.GetInputMoveRight()){
-		x++;
+		setVelocityX(3);
+	}
+	if(keyboard_check_pressed(vk_space)){
+		setVelocityY(-5);	
 	}
 }
