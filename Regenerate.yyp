@@ -1,11 +1,11 @@
 {
   "resources": [
-    {"id":{"name":"scr_getInput","path":"scripts/scr_getInput/scr_getInput.yy",},"order":0,},
-    {"id":{"name":"scr_initializeGameEnvironment","path":"scripts/scr_initializeGameEnvironment/scr_initializeGameEnvironment.yy",},"order":1,},
+    {"id":{"name":"scr_consoleScripts","path":"scripts/scr_consoleScripts/scr_consoleScripts.yy",},"order":1,},
     {"id":{"name":"spr_testPlayer","path":"sprites/spr_testPlayer/spr_testPlayer.yy",},"order":0,},
     {"id":{"name":"r_test","path":"rooms/r_test/r_test.yy",},"order":1,},
     {"id":{"name":"obj_console","path":"objects/obj_console/obj_console.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"PlayerFunctions","path":"scripts/PlayerFunctions/PlayerFunctions.yy",},"order":2,},
     {"id":{"name":"r__initialize","path":"rooms/r__initialize/r__initialize.yy",},"order":0,},
   ],
   "Options": [
