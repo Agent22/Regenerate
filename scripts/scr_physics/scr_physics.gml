@@ -94,6 +94,5 @@ function roundToNearestOne(num){
 	if(num < 0){ numSign = -1; }
 	if(decimal == 0){ return num;
 	}else if(abs(decimal) < 0.5){ return num-decimal;
-	}else{ return num-decimal+1; }
 	}else{ return num-decimal+1*numSign; }
 }

@@ -17,8 +17,6 @@ function scr_playerDash(gpH,gpV){
 			dashTimeCount = 0;
 			dashAvailable = false;
 			
-			show_debug_message(string(getVelocityX())+" "+string(getVelocityY()));
-			
 			break;
 		}
 	}
