@@ -7,9 +7,9 @@ function scr_physics(entity){
 		
 		//gravity
 		if(getState() == State.Idle || getState() == State.Hurt){
-			if(!place_meeting(x,y+1,obj_wall)){
+			if(!getGrounded() && getGravity()){
 				//we're falling.
-				if(velocityY < 4){
+				if(velocityY < 10){
 					//Fall faster until terminal velocity.
 					velocityY += 0.2;
 				}

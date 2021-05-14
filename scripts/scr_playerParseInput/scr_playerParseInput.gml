@@ -32,7 +32,7 @@ function scr_playerParseInput(){
 	
 	// Jumping
 	if(gpJump){
-		// scr_playerJump();
+		scr_playerJump();
 	}
 	
 	// Dashing
@@ -61,7 +61,14 @@ function scr_playerParseInput(){
 	}
 	
 	// Jump Held
-	if(!gpJumpHeld){
-		// player.jumpValue = 0;
+	if(jumpTime >= 0){
+		if(gpJumpHeld){
+			var sustainVelocity = min(jumpVelocity * jumpTime, -2);
+			setVelocityY(sustainVelocity);
+		}else{
+			jumpTime = -1;
+			setVelocityY(0);
+		}
 	}
+	
 }
