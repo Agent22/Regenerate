@@ -25,5 +25,13 @@ function scr_playerUpdate(){
 		case State.SuperCharging:
 			sprite_index = spr_player_superMove_vis;
 		break;
+		case State.Dash:
+			dashTimeCount++;
+			if(dashTimeCount == dashTime){
+				setVelocityX(0);
+				setVelocityY(getVelocityY()/2);
+				setState(State.Idle);
+			}
+		break;
 	}
 }

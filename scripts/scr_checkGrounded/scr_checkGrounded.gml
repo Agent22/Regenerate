@@ -2,4 +2,5 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_checkGrounded(){
 	grounded = place_meeting(x,y+1,obj_wall);
+	setGrounded(place_meeting(x,y+1,obj_wall));
 }

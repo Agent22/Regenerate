@@ -6,5 +6,11 @@ function scr_playerMove(input){
 		setVelocityX(moveVelocity);
 	} else {
 		setVelocityX(-moveVelocity);
+	if(getState() == State.Idle){
+		if(input > 0){
+			setVelocityX(moveVelocity);
+		} else {
+			setVelocityX(-moveVelocity);
+		}
 	}
 }

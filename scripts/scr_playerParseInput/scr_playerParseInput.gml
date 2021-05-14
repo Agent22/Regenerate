@@ -38,6 +38,7 @@ function scr_playerParseInput(player){
 	// Dashing
 	if(gpDash){
 		// scr_playerDash();
+		scr_playerDash(gpH,gpV);
 	}
 	
 	// Parrying

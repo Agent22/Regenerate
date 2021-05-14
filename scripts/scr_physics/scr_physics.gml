@@ -80,6 +80,7 @@ function scr_physics(entity){
 			if(velocityX != 0){
 				velocityX = 0;
 				setVelocityX(0);
+				setVelocityX(velocityX);
 			}
 		}
 	}
@@ -89,7 +90,10 @@ function scr_physics(entity){
 //so I decided to make my own round function that's fair.
 function roundToNearestOne(num){
 	var decimal = num mod 1;
+	var numSign = 1;
+	if(num < 0){ numSign = -1; }
 	if(decimal == 0){ return num;
 	}else if(abs(decimal) < 0.5){ return num-decimal;
 	}else{ return num-decimal+1; }
+	}else{ return num-decimal+1*numSign; }
 }

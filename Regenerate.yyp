@@ -31,6 +31,7 @@
     {"id":{"name":"obj_physicsObject","path":"objects/obj_physicsObject/obj_physicsObject.yy",},"order":2,},
     {"id":{"name":"spr_player_med_3_vis","path":"sprites/spr_player_med_3_vis/spr_player_med_3_vis.yy",},"order":3,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"scr_playerDash","path":"scripts/scr_playerDash/scr_playerDash.yy",},"order":14,},
     {"id":{"name":"spr_player_med_1_hitbox","path":"sprites/spr_player_med_1_hitbox/spr_player_med_1_hitbox.yy",},"order":0,},
     {"id":{"name":"scr_playerJumpSustain","path":"scripts/scr_playerJumpSustain/scr_playerJumpSustain.yy",},"order":14,},
     {"id":{"name":"obj_testWall","path":"objects/obj_testWall/obj_testWall.yy",},"order":5,},
