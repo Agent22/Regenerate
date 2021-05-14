@@ -48,6 +48,7 @@ function scr_playerParseInput(){
 	// Attacking
 	if(gpAttack){
 		// scr_playerAttack();
+		scr_playerAttack();
 		// This script switches on the player's state.
 		// Can trigger first attack, combo attack, or dash attack.
 		// If the player is not in a state that permits attacking, this script does nothing.
@@ -56,6 +57,7 @@ function scr_playerParseInput(){
 	// Attack Release
 	if(!gpAttackHeld){
 		// scr_playerAttackConfirm();
+		scr_playerAttackConfirm();
 		// Also switches on player's state. Unless the player is in the
 		// attackCharging state, this script does nothing.
 	}
