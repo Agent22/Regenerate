@@ -45,4 +45,19 @@ function scr_enums(){
 		playerMedium4,
 		superMove
 	}
+	
+	enum CharacterType{
+		player,
+		striker
+	}
+	
+	enum Action{
+		idle,
+		strikerLeap
+	}
+	
+	enum ActionComponent{
+		approach,
+		attack
+	}
 }

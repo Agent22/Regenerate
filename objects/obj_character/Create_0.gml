@@ -7,6 +7,8 @@ state = State.Idle;
 jumpVelocity = -10;
 moveVelocity = 5;
 
+
+
 hitPoints = 100;
 attackPower = 30;
 //jump number variable here
