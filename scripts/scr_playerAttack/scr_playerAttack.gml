@@ -1,23 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_playerAttack(){
-	/*
-	switch(player.GetState())
 	
 	switch(getState())
 	{
-	case idle:
 	case State.Idle:
 	case State.Cannonball:
 	case State.Focusing:
 		scr_playerAttackStart();
 		break;
-	case attackEndLag:
 	case State.AttackEndLag:
 		scr_playerAttackCombo();
 		break;
-	case omniDash:
-		scr_playerAttackDash();
 	case State.Dash:
 		//scr_playerAttackDash();
 		break;

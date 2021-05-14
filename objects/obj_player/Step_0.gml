@@ -9,5 +9,8 @@ if(jumpTime >= 0){
 	jumpTime -= delta_time / 1000000;
 }else{
 	setGravity(true);
+}
+
 scr_playerParseInput();
 scr_playerUpdate();
+scr_physics(id);
