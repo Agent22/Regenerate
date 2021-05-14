@@ -4,10 +4,13 @@ function scr_playerJump(){
 	if(getState() == State.Idle){
 		if(getGrounded()){
 			setVelocityY(jumpVelocity);
-			jumpTime = 1;
+			jumpTime = 30;
+			jumpCancelWindow = 60;
 			// setAnimation(jump);
 		} else if(cannonballAvailable){
 			setVelocityY(jumpVelocity);
+			jumpTime = 30;
+			jumpCancelWindow = 60;
 			// setAnimation(cannonball);
 			setState(State.Cannonball);
 		}

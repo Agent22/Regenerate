@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_playerParseInput(){
+function scr_playerParseInput(player){
 	// --------------------
 	// GATHER GAMEPAD INPUT
 	// --------------------
@@ -61,14 +61,7 @@ function scr_playerParseInput(){
 	}
 	
 	// Jump Held
-	if(jumpTime >= 0){
-		if(gpJumpHeld){
-			var sustainVelocity = min(jumpVelocity * jumpTime, -2);
-			setVelocityY(sustainVelocity);
-		}else{
-			jumpTime = -1;
-			setVelocityY(0);
-		}
+	with(player){
+		scr_playerJumpSustain(gpJumpHeld);
 	}
-	
 }

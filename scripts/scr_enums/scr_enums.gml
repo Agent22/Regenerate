@@ -18,14 +18,14 @@ function scr_enums(){
 		Focusing
 	}
 	
-	enum AttackPower{
+	enum AttackStrength{
 		Weak = .25,
 		Normal = 1,
 		Strong = 2,
 		Super = 4,
 	}
 	
-	enum HyperarmorPower{
+	enum HyperarmorStrength{
 		None,
 		Weak,
 		Medium,

@@ -3,8 +3,12 @@
 event_inherited();
 stateComponent = new sct_stateComponent();
 state = State.Idle;
-jumpVelocity = -8;
+
+jumpVelocity = -10;
 moveVelocity = 5;
+
+hitPoints = 100;
+attackPower = 30;
 //jump number variable here
 
 function getState(){

@@ -1,16 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
-scr_physics(id);
-scr_playerParseInput();
+scr_playerParseInput(id);
 
-if(jumpTime >= 0){
+if(jumpTime > 0){
 	setGravity(false);
-	jumpTime -= delta_time / 1000000;
+	--jumpTime;
 }else{
 	setGravity(true);
 }
 
-scr_playerParseInput();
+if(jumpCancelWindow > 0){
+	--jumpCancelWindow;
+}
+
 scr_playerUpdate();
 scr_physics(id);
