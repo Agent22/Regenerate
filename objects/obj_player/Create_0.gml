@@ -5,6 +5,7 @@ event_inherited();
 cannonballAvailable = true;
 jumpTime = 0;
 jumpCancelWindow = 0;
+cannonballLockIn = 0;
 
 weapon = new sct_weapon(WeaponType.Medium);
 comboCounter = 0;

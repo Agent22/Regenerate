@@ -6,12 +6,12 @@ function scr_playerJump(){
 			setVelocityY(jumpVelocity);
 			jumpTime = 30;
 			jumpCancelWindow = 60;
-			// setAnimation(jump);
 		} else if(cannonballAvailable){
 			setVelocityY(jumpVelocity);
 			jumpTime = 30;
-			jumpCancelWindow = 60;
-			// setAnimation(cannonball);
+			jumpCancelWindow = 45;
+			cannonballLockIn = 15;
+			cannonballAvailable = false;
 			setState(State.Cannonball);
 		}
 	}

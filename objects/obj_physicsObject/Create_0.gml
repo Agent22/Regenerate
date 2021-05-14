@@ -5,7 +5,8 @@ event_inherited();
 velocityX = 0;
 velocityY = 0;
 grounded = false;
-hasGravity = true;
+gravityMult = 1;
+terminalVelocityMult = 1;
 
 function getVelocityX(){
 	return velocityX;
@@ -29,9 +30,17 @@ function setGrounded(val){
 }
 
 function getGravity(){
-	return hasGravity;
+	return gravityMult;
 }
 
 function setGravity(val){
-	hasGravity = val;
+	gravityMult = val;
+}
+
+function getTerminal(){
+	return terminalVelocityMult;
+}
+
+function setTerminal(val){
+	terminalVelocityMult = val;
 }

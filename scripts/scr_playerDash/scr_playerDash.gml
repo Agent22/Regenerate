@@ -14,6 +14,7 @@ function scr_playerDash(gpH,gpV){
 			setVelocityX(gpHNew*dashSpeed);
 			setVelocityY(gpVNew*dashSpeed);
 			setState(State.Dash);
+			setGravity(0);
 			dashTimeCount = 0;
 			dashAvailable = false;
 			

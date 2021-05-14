@@ -2,6 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_playerUpdate(){
 	switch(getState()){
+		case State.Idle:
+			sprite_index = spr_testPlayer;
+			if(jumpTime > 0){
+				setGravity(0);
+				--jumpTime;
+			}else{
+				setGravity(1);
+			}
+			setTerminal(1);
+		break;
 		case State.AttackActive:
 			//use the weapon.combo[comboCounter].hitbox to check for enemies and HIT 'EM
 		case State.AttackStartup:
@@ -19,6 +29,7 @@ function scr_playerUpdate(){
 			}else if(attackFrame == sprite_get_number(sprite_index)){
 				//The Attack is over.
 				setState(State.Idle);
+				setGravity(1);
 				sprite_index = spr_testPlayer;
 			}
 		break;
@@ -31,7 +42,30 @@ function scr_playerUpdate(){
 				setVelocityX(0);
 				setVelocityY(getVelocityY()/2);
 				setState(State.Idle);
+				setGravity(1);
 			}
 		break;
+		case State.Cannonball:
+			sprite_index = spr_literalCannonball;
+			if(jumpTime > 0){
+				setGravity(0);
+				--jumpTime;
+			}else{
+				setGravity(2);
+				setTerminal(3);
+			}
+			if(getGrounded()){
+				setState(State.Idle);
+			}
+		break;
+	}
+	if(jumpCancelWindow > 0){
+		--jumpCancelWindow;
+	}
+	if(cannonballLockIn > 0){
+		--cannonballLockIn;
+	}
+	if(getGrounded()){
+		cannonballAvailable = true;
 	}
 }

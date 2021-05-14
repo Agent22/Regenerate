@@ -6,21 +6,20 @@ function scr_physics(entity){
 		var velocityY = getVelocityY();
 		
 		//gravity
-		if(getState() == State.Idle || getState() == State.Hurt){
-			if(!getGrounded() && getGravity()){
-				//we're falling.
-				if(velocityY < 10){
-					//Fall faster until terminal velocity.
-					velocityY += 0.2;
-				}
-			}else{
-				//we're standing.
-				if(velocityY > 0){
-					//If we're falling, stop.
-					velocityY = 0;
-				}
+		if(!getGrounded()){
+			//we're falling.
+			if(velocityY < 10 * getTerminal()){
+				//Fall faster until terminal velocity.
+				velocityY += 0.2 * getGravity();
+			}
+		}else{
+			//we're standing.
+			if(velocityY > 0){
+				//If we're falling, stop.
+				velocityY = 0;
 			}
 		}
+		
 		
 		//There are no more changes to velocity before the update position step.
 		//set velocity.
@@ -76,7 +75,7 @@ function scr_physics(entity){
 		
 		
 		//idle "snappiness"
-		if(getState() == State.Idle){
+		if(getState() == State.Idle || getState() == State.Cannonball){
 			if(velocityX != 0){
 				velocityX = 0;
 				setVelocityX(0);
