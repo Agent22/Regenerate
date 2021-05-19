@@ -80,7 +80,7 @@ function scr_physics(entity){
 		
 		
 		//idle "snappiness"
-		if(getState() == State.Idle || getState() == State.Cannonball){
+		if(getState() == State.Idle){
 			if(velocityX != 0){
 				velocityX = 0;
 				setVelocityX(0);

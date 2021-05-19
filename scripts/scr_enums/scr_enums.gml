@@ -24,6 +24,7 @@ function scr_enums(){
 	}
 	
 	enum WeaponType{
+		None,
 		Light,
 		Medium,
 		Heavy
@@ -31,6 +32,14 @@ function scr_enums(){
 	
 	enum Action{
 		Idle,
+		PlayerLightAttack,
+		PlayerMediumAttack,
+		PlayerHeavyAttack,
+		PlayerCannonball,
+		PlayerOmniDash,
+		PlayerAttackDash,
+		PlayerSuperMove,
+		PlayerSuperMove2,
 		StrikerLeap
 	}
 	
@@ -46,5 +55,11 @@ function scr_enums(){
 		Striker_Leap,
 		Striker_Attack,
 		Striker_LeapBack
+	}
+	
+	enum ACComplete{
+		None,
+		Iterate,
+		Escape
 	}
 }

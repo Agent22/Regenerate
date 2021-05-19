@@ -4,5 +4,5 @@ function scr_initializeGameEnvironment(){
 	global.console = id;
 	global.frameDivisor = 15;
 	
-	room_goto_next();	
+	room_goto_next();
 }
