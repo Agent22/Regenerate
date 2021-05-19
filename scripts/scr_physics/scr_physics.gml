@@ -12,6 +12,11 @@ function scr_physics(entity){
 				//Fall faster until terminal velocity.
 				velocityY += 0.2 * getGravity();
 			}
+			//Velocity is greater than terminal velocity - maybe terminalMult decreased recently.
+			if(velocityY > 10 * getTerminal()){
+				//Set velocity to terminal.
+				velocityY = 10 * getTerminal();
+			}
 		}else{
 			//we're standing.
 			if(velocityY > 0){

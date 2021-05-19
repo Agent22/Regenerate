@@ -3,18 +3,9 @@
 function scr_enums(){
 	enum State{
 		Idle,
-		AttackStartup,
-		SuperCharging,
-		AttackActive,
-		AttackEndLag,
-		Cannonball,
-		Dash,
-		AttackDash,
-		Parry,
-		ParryFail,
-		Hurt,
+		Acting,
+		Stunned,
 		SuperMovePrompt,
-		SuperMove,
 		Focusing
 	}
 	
@@ -38,26 +29,22 @@ function scr_enums(){
 		Heavy
 	}
 	
-	enum Attack{
-		playerMedium1,
-		playerMedium2,
-		playerMedium3,
-		playerMedium4,
-		superMove
-	}
-	
-	enum CharacterType{
-		player,
-		striker
-	}
-	
 	enum Action{
-		idle,
-		strikerLeap
+		Idle,
+		StrikerLeap
 	}
 	
 	enum ActionComponent{
-		approach,
-		attack
+		Player_JumpRise,
+		Player_CannonballRise,
+		Player_CannonballFall,
+		Player_MediumAttack1,
+		Player_MediumAttack2,
+		Player_MediumAttack3,
+		Player_MediumAttack4,
+		Player_SuperAttack,
+		Striker_Leap,
+		Striker_Attack,
+		Striker_LeapBack
 	}
 }

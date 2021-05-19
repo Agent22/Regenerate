@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_consoleScripts",
+  "name": "sct_animator",
   "tags": [],
   "resourceType": "GMScript",
 }
