@@ -33,7 +33,7 @@ superMove2Unlocked);
 //overwritten setGrounded
 function setGrounded(val){
 	grounded = val;
-	if(true){
+	if(stateComponent.getState() == State.Idle || (moveset.getCurrentActionEnum != Action.PlayerOmniDash && moveset.getCurrentActionEnum != Action.PlayerAttackDash)){
 		dashAvailable = true;
 	}
 }

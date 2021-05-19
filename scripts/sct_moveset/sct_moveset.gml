@@ -9,7 +9,7 @@ function sct_moveset(animator,arrayActionEnums) constructor{
 	if(argument_count == 2){
 		var array = argument[1];
 		for(var i = 0; i < array_length(array); i++){
-			actions[array_length(actions)] = parseActionEnum(array[i]);
+			actions[array_length(actions)] = new sct_action(array[i],animator);
 		}
 	}
 	
@@ -21,7 +21,10 @@ function sct_moveset(animator,arrayActionEnums) constructor{
 		actions[actionIndex].clean();
 	}
 	function getCurrentActionEnum(){
-		//return 
+		return actions[actionIndex].getActionEnum();
+	}
+	function getCurrentACMethodEnum(){
+		return actions[actionIndex].getCurrentACMethodEnum();
 	}
 	function getActions(){
 		return actions;
@@ -35,21 +38,5 @@ function sct_moveset(animator,arrayActionEnums) constructor{
 			return true;
 		}
 		return false;
-	}
-	function parseActionEnum(actionEnum){
-		switch(actionEnum){
-			/*
-			default:
-			case Action.ExampleAction:
-				componentArray = [];
-				componentArray[0] = new sct_actionComponent(DaTell);
-				componentArray[1] = new sct_actionComponent(DaBigJump);
-				componentArray[2] = new sct_actionComponent(DaSLAM);
-				componentArray[3] = new sct_actionComponent(DaCooldown);
-				return new action(componentArray,animator);
-			break;*/
-		}
-		//The switch should have a default, this should never be called.
-		return noone;
 	}
 }

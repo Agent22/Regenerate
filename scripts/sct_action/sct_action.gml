@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sct_action(arrayActionComponents,refAnimator) constructor{
-	componentArray = arrayActionComponents;
+function sct_action(enumAction,refAnimator) constructor{
+	actionEnum = enumAction
+	componentArray = parseActionEnum(actionEnum);
 	componentIndex = 0;
 	animator = refAnimator;
 	
@@ -10,6 +11,10 @@ function sct_action(arrayActionComponents,refAnimator) constructor{
 		for(var i = 0; i < array_length(componentArray); i++){
 			componentArray[i].clean();
 		}
+	}
+	
+	function getActionEnum(){
+		return actionEnum;
 	}
 	
 	function getCurrentACMethodEnum(){
@@ -30,5 +35,22 @@ function sct_action(arrayActionComponents,refAnimator) constructor{
 			return true;
 		}
 		return false;
+	}
+	
+	function parseActionEnum(actionEnum){
+		switch(actionEnum){
+			/*
+			default:
+			case Action.ExampleAction:
+				componentArray = [];
+				componentArray[0] = new sct_actionComponent(DaTell);
+				componentArray[1] = new sct_actionComponent(DaBigJump);
+				componentArray[2] = new sct_actionComponent(DaSLAM);
+				componentArray[3] = new sct_actionComponent(DaCooldown);
+				return new action(componentArray,animator);
+			break;*/
+		}
+		//The switch should have a default, this should never be called.
+		return noone;
 	}
 }

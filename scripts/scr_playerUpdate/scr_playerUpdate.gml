@@ -12,7 +12,7 @@ function scr_playerUpdate(){
 			}
 			setTerminal(1);
 		break;
-		case State.AttackActive:
+		/*case State.AttackActive:
 			//use the weapon.combo[comboCounter].hitbox to check for enemies and HIT 'EM
 		case State.AttackStartup:
 		case State.AttackEndLag:
@@ -57,7 +57,7 @@ function scr_playerUpdate(){
 			if(getGrounded()){
 				setState(State.Idle);
 			}
-		break;
+		break;*/
 	}
 	if(jumpCancelWindow > 0){
 		--jumpCancelWindow;
